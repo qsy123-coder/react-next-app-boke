@@ -76,6 +76,9 @@ export function Hero() {
             <p className="text-sm text-gray-400">Discover trending stories and fresh ideas</p>
           </div>
         </div>
+        <div>
+          <span> </span>
+        </div>
       </div>
     </section>
   );
