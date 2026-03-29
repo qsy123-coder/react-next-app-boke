@@ -8,6 +8,7 @@ Read the following to get the full context of the project:
 
 - @nextjs-supabase-best-practices
 - @dev-guidelines
+- @coding_rules_next
 
 ## Commands
 
