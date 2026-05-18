@@ -128,3 +128,85 @@
     @apply font-sans;
   }
 }
+
+@layer components {
+  .editor-shell .ProseMirror p.is-editor-empty:first-child::before {
+    content: attr(data-placeholder);
+    color: color-mix(in oklab, var(--color-muted-foreground) 90%, white 10%);
+    float: left;
+    height: 0;
+    pointer-events: none;
+  }
+
+  .editor-shell .ProseMirror h2 {
+    font-size: 1.875rem;
+    line-height: 1.15;
+    font-weight: 700;
+    margin-top: 1.75rem;
+    margin-bottom: 0.9rem;
+    color: #09090b;
+  }
+
+  .editor-shell .ProseMirror h3 {
+    font-size: 1.5rem;
+    line-height: 1.25;
+    font-weight: 700;
+    margin-top: 1.45rem;
+    margin-bottom: 0.75rem;
+    color: #18181b;
+  }
+
+  .editor-shell .ProseMirror p {
+    margin: 0.7rem 0;
+  }
+
+  .editor-shell .ProseMirror ul,
+  .editor-shell .ProseMirror ol {
+    margin: 1rem 0;
+    padding-left: 1.5rem;
+  }
+
+  .editor-shell .ProseMirror ul {
+    list-style: disc;
+  }
+
+  .editor-shell .ProseMirror ol {
+    list-style: decimal;
+  }
+
+  .editor-shell .ProseMirror blockquote {
+    margin: 1.25rem 0;
+    border-left: 4px solid #d4d4d8;
+    padding-left: 1rem;
+    color: #52525b;
+    font-style: italic;
+  }
+
+  .editor-shell .ProseMirror a {
+    color: #2563eb;
+    text-decoration: underline;
+    text-underline-offset: 0.2em;
+  }
+
+  .editor-shell .ProseMirror:focus {
+    outline: none;
+  }
+
+  .dashboard-skeleton {
+    position: relative;
+    overflow: hidden;
+    border-radius: 1.5rem;
+    background: linear-gradient(90deg, rgba(228, 228, 231, 0.75) 0%, rgba(244, 244, 245, 1) 45%, rgba(228, 228, 231, 0.75) 100%);
+    background-size: 200% 100%;
+    animation: dashboard-skeleton-wave 1.2s ease-in-out infinite;
+  }
+}
+
+@keyframes dashboard-skeleton-wave {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}

@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
-import { BookOpen, PenLine, Users, Sparkles, ArrowRight, FileText } from "lucide-react";
+import { BookOpen, PenLine, Users, ArrowRight, FileText } from "lucide-react";
 
 export function Hero() {
   return (
@@ -19,11 +19,11 @@ export function Hero() {
 
       {/* Content */}
       <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 text-center">
-        {/* Badge */}
+        {/* Badge
         <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 mb-6 sm:mb-8">
           <Sparkles className="size-4 text-white" />
           <span className="text-sm font-medium text-white">Start your creative journey today</span>
-        </div>
+        </div> */}
 
         <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-tight text-balance mb-4 sm:mb-6">
           Amplify your voice with striking blog posts.

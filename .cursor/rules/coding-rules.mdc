@@ -1,3 +1,8 @@
+---
+description: 
+alwaysApply: true
+---
+
 # Coding Rules / 开发规范
 
 本规范用于统一项目代码风格、结构和最佳实践，确保代码可维护性、可扩展性和团队协作效率。
@@ -5,7 +10,8 @@
 ---
 
 ## 1. 通用原则
-
+-严格使用gitbash终端，严禁使用powershell
+- 参照@documents/prd.md里的产品需求文档
 - 保持代码**简单、清晰、可读**（KISS 原则）
 - 避免重复代码（DRY 原则）
 - 优先考虑可维护性而非过度优化
@@ -35,6 +41,7 @@
 ```
 
 ### 规则
+
 - 使用 App Router（/app 目录）
 - 路由按功能分组（public / auth / dashboard）
 - 页面组件只负责布局和数据组合，不写复杂业务逻辑
@@ -51,6 +58,7 @@
 - 文件名：kebab-case（推荐）
 
 示例：
+
 ```
 getUserBlogs()
 BlogCard.tsx
@@ -111,6 +119,7 @@ MAX_RETRY_COUNT
 - 所有查询必须处理错误
 
 示例：
+
 ```
 const { data, error } = await supabase.from('blogs').select('*')
 if (error) throw error
@@ -129,6 +138,7 @@ if (error) throw error
   - DELETE：删除
 
 - 返回结构统一：
+
 ```
 {
   data: ...,
@@ -173,9 +183,10 @@ if (error) throw error
 ## 12. Git 规范
 
 ### 分支
+
 - main：生产
 - dev：开发
-- feature/*：新功能
+- feature/\*：新功能
 
 ### commit message
 
@@ -257,4 +268,3 @@ refactor: 重构 API 结构
 👉 一致性 > 个性化
 
 遵守规范可以显著提升开发效率和代码质量。
-

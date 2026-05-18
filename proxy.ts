@@ -1,7 +1,7 @@
 // proxy.ts
-import { NextRequest, NextResponse } from "next/server";
+import { NextResponse } from "next/server";
 
-export default function proxy(request: NextRequest) {
+export default function proxy() {
   return NextResponse.next();
 }
 

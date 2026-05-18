@@ -1,0 +1,39 @@
+1.supabase
+Come up with a plan for creating a table called profiles. This table will hold extended user data.
+When a user signs up, use a trigger to create a new record that's associated with auth.users.
+I want to store the following data in this table:
+
+first_name (optional)
+avatar_url (optional)
+email
+
+Add a types folder and add individual types files.
+Generate supabase/migrations as well and run supabase db push to apply the migration.
+Setup RLS so that only users can manage their own data.
+
+2.supabase
+
+Database Schema & Migration:
+
+Create a Supabase migration file for a 'blogs' table with these fields:
+title (text, required)
+slug (auto-generated from title)
+subtitle (text, optional)
+image (text, URL for blog cover image)
+content (text, rich text content from TipTap)
+author (text, author name)
+created_at
+updated_at
+
+
+Create server actions for blog CRUD operations.
+Implement slug-based routing.
+Deploy the migration to Supabase - supabase db push
+Update TypeScript types to reflect the new blog schema.
+TipTap Editor Integration:
+
+Install TipTap editor with React integration
+Configure the Bubble menu for content creation
+Include essential formatting options: bold, italic, headings, lists, links
+
+NOTE: next/headers can only be used in RSC - we need a clear separation between client and server components.

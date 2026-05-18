@@ -7,7 +7,7 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import { Button } from "@/components/ui/button"; // ← 新增导入
-import { ChevronDown, PenLine, LogIn, UserPlus } from "lucide-react";
+import { ChevronDown, LogIn, UserPlus } from "lucide-react";
 import Link from "next/link";
 const DropdownLink = () => {
   return (

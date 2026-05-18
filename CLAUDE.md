@@ -1,3 +1,13 @@
+---
+description: 
+alwaysApply: false
+---
+
+---
+description: 
+alwaysApply: true
+---
+
 # DevStash
 
 A developer knowledge hub for snippets, commands, prompts, notes, files, images, links and custom types.
@@ -6,9 +16,11 @@ A developer knowledge hub for snippets, commands, prompts, notes, files, images,
 
 Read the following to get the full context of the project:
 
+- @documents/prd.md
 - @nextjs-supabase-best-practices
 - @dev-guidelines
 - @coding_rules_next
+- @nextjs-supabase-best-practices
 
 ## Commands
 

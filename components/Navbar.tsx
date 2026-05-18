@@ -5,7 +5,7 @@ import { MobileMenu } from "./MobileMenu";
 
 const navLinks = [
   { name: "首页", href: "/" },
-  { name: "文章", href: "/articles" },
+  { name: "文章", href: "/blogs" },
   { name: "分类", href: "/categories" },
   { name: "标签", href: "/tags" },
   { name: "归档", href: "/archives" },
